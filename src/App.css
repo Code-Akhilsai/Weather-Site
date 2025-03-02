@@ -1,0 +1,546 @@
+body {
+  background-image: url("./assets/Image.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+#head_cont {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 60px;
+  padding: 10px;
+}
+
+.search-container {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 10px;
+  margin-top: 11px;
+}
+
+#search_bar {
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  opacity: -3px;
+  height: 43px;
+  width: 30vw;
+  border-radius: 16px;
+  outline: none;
+  font-size: 16px;
+  color: white;
+}
+
+#search_bar::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+  padding-left: 8px;
+}
+
+#search_bar:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+#search_bar:focus {
+  border-color: rgba(255, 255, 255, 0.8);
+}
+
+#search_icon {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: rgba(255, 255, 255, 0.7);
+  cursor: pointer;
+}
+
+#wea_cont1 {
+  justify-items: center;
+  margin-top: 65px;
+}
+
+.coun_name {
+  color: white;
+  font-family: sans-serif;
+  margin-top: -39px;
+  font-size: 37px;
+}
+
+#wea_cont2 {
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  width: 35%;
+  height: auto;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  margin-top: -0.7%;
+}
+
+#wea_cont2 img {
+  margin-top: -10px;
+}
+
+#wea_cont2 p {
+  margin: 10px 0;
+}
+#places_cont {
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  opacity: -3px;
+  height: 603px;
+  width: 17vw;
+  border-radius: 16px;
+  outline: none;
+  font-size: 16px;
+  color: white;
+  float: right;
+  margin-top: -485px;
+  margin-right: 5px;
+}
+.place_item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 0;
+}
+
+.place_item p {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  font-family: sans-serif;
+  margin-left: 8px;
+}
+
+.temperature {
+  flex: 1;
+  text-align: right;
+  font-weight: bold;
+}
+
+#other_data {
+  display: flex;
+}
+
+.data-item {
+  color: white;
+  font-family: sans-serif;
+  font-weight: 500;
+  margin-top: 13px;
+  font-size: 20px;
+  padding-left: 24px;
+}
+
+.hour_cont {
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  opacity: -3px;
+  width: 190px;
+  height: 128px;
+  border-radius: 16px;
+  outline: none;
+  font-size: 12px;
+  color: white;
+  float: left;
+  margin-top: 55px;
+  font-family: sans-serif;
+  padding: 10px;
+  margin-left: 30px;
+}
+
+.hour_cont2 {
+  display: flex;
+  align-items: center;
+  margin-top: -65px;
+}
+.hour_cont2 img {
+  margin-left: -12px;
+}
+.hour_cont2 p {
+  font-size: 35px;
+}
+
+.Min_cont2 {
+  display: flex;
+  align-items: center;
+  margin-top: -40px;
+}
+.Min_cont2 img {
+  margin-left: -25px;
+}
+.Min_cont2 p {
+  font-size: 45px;
+}
+
+.temp {
+  font-size: 80px;
+  color: white;
+  font-weight: 500;
+  font-family: sans-serif;
+}
+
+/* Media Queries for Responsiveness */
+@media (min-width: 320px) and (max-width: 431px) {
+  body {
+    overflow: visible;
+    margin: 0;
+  }
+  #head_cont {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .search-container {
+    position: static;
+    transform: none;
+    margin-top: 30px;
+  }
+
+  #search_bar {
+    width: 110vw;
+    margin-right: 2%;
+  }
+
+  #search_icon {
+    right: -12%;
+    transform: translateY(22%);
+  }
+
+  #wea_cont1 {
+    margin-left: 5%;
+  }
+
+  .coun_name {
+    margin-top: -4.5%;
+    margin-left: 13%;
+
+    font-size: 13vw;
+  }
+
+  #wea_cont2 {
+    width: 100%;
+    margin-left: 12%;
+  }
+
+  .temp {
+    font-size: 15vw;
+  }
+
+  #other_data {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-items: center;
+    margin-left: -8%;
+  }
+
+  #places_cont {
+    float: none;
+    margin-top: 4.7%;
+    margin-left: 7%;
+    margin-bottom: 78%;
+    height: 34%;
+    width: 103vw;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .place_item p {
+    font-size: 5vw;
+    font-weight: 700;
+  }
+
+  .temperature {
+    margin-left: 0;
+  }
+  #hour_cont {
+    margin-bottom: 16%;
+  }
+
+  .hour_cont {
+    width: 100%;
+    margin-top: 27px;
+    margin-left: 5%;
+
+    text-align: center;
+  }
+  .hour_cont h1 {
+    text-align: center;
+    font-size: x-large;
+  }
+
+  .hour_cont2 {
+    justify-content: center;
+    margin-right: 8%;
+
+    height: 88%;
+  }
+  .hour_cont2 img {
+    margin-left: 0px;
+    height: 26vw;
+  }
+
+  .hour_cont2 p {
+    font-size: 13vw;
+  }
+  .Min_cont2 {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    padding-top: 2%;
+  }
+
+  .Min_cont2 img {
+    margin-top: 4.7%;
+    height: 26vw;
+  }
+
+  .Min_cont2 p {
+    font-size: 13vw;
+    margin-left: -2%;
+  }
+
+  .Min_cont2 .fareh_data {
+    margin-top: 11%;
+    font-size: 12vw;
+  }
+
+  .coun_name {
+    width: 100%;
+    text-align: center;
+    font-size: 9.4vw;
+    font-weight: 500;
+  }
+}
+
+@media (min-width: 431px) and (max-width: 770px) {
+  body {
+    overflow: visible;
+    margin: 0;
+  }
+  #head_cont {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .search-container {
+    position: static;
+    transform: none;
+    margin-top: 30px;
+  }
+
+  #wea_cont1 {
+    margin-left: 0%;
+    width: 90%;
+  }
+
+  .coun_name {
+    margin-top: -4.5%;
+    margin-left: 13%;
+
+    font-size: 13vw;
+  }
+
+  #wea_cont2 {
+    width: 100%;
+    margin-left: 12%;
+  }
+
+  .temp {
+    font-size: 10vw;
+  }
+
+  #other_data {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-items: center;
+    margin-left: 0%;
+  }
+
+  #places_cont {
+    float: none;
+    margin-top: 4.7%;
+
+    margin-bottom: 20%;
+    height: 34%;
+
+    display: flex;
+    flex-direction: column;
+
+    margin-left: 5%;
+    width: 90vw;
+  }
+
+  .place_item p {
+    font-size: 4vw;
+    font-weight: 700;
+  }
+
+  .temperature {
+    margin-left: 0;
+  }
+  #hour_cont {
+    margin-bottom: 16%;
+  }
+
+  .hour_cont {
+    margin-top: 27px;
+
+    text-align: center;
+    width: 90%;
+    margin-left: 4%;
+  }
+  .hour_cont h1 {
+    text-align: center;
+    font-size: x-large;
+    margin-top: 4px;
+  }
+
+  .hour_cont2 {
+    justify-content: center;
+    margin-right: 8%;
+
+    height: 88%;
+  }
+  .hour_cont2 img {
+    margin-left: 0px;
+    height: 14vw;
+  }
+
+  .hour_cont2 p {
+    font-size: 6vw;
+  }
+  .Min_cont2 {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .Min_cont2 img {
+    height: 14vw;
+  }
+
+  .Min_cont2 .fareh_data {
+    font-size: 6vw;
+  }
+
+  #search_bar {
+    width: 70vw;
+    margin-left: 20%;
+  }
+
+  #search_icon {
+    right: 16%;
+    transform: translateY(22%);
+  }
+  .coun_name {
+    width: 100%;
+    text-align: center;
+    font-size: 9.4vw;
+    font-weight: 500;
+    font-size: 8vw;
+  }
+}
+
+@media (min-width: 770px) and (max-width: 1025px) {
+  body {
+    overflow: hidden;
+    margin-bottom: 0;
+  }
+  .coun_name {
+    margin-top: -5.5%;
+  }
+
+  #wea_cont2 {
+    width: 39%;
+    height: 39vh;
+    margin-top: -0.9%;
+  }
+  .temp {
+    font-size: 5vw;
+  }
+
+  .data-item {
+    font-weight: 600;
+    font-size: 13.5px;
+  }
+
+  .place_item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2px 0;
+  }
+
+  .place_item p {
+    margin-left: 4px;
+    gap: 6px;
+  }
+
+  .place_item img {
+    height: 24px;
+  }
+
+  .hour_cont {
+    width: 11%;
+    height: 108px;
+    margin-left: 1.8%;
+    margin-top: 4%;
+    margin-bottom: 3%;
+  }
+  .hour_cont h1 {
+    font-size: large;
+  }
+  .hour_cont h2 {
+    font-size: medium;
+  }
+
+  .hour_cont2 img {
+    height: 11vh;
+  }
+
+  .hour_cont2 p {
+    font-size: 2.5vw;
+  }
+
+  .Min_cont2 img {
+    margin-top: 19%;
+    margin-left: -20px;
+    height: 11vh;
+  }
+  .Min_cont2 p {
+    margin-top: 45%;
+    font-size: 2.5vw;
+  }
+
+  #places_cont {
+    height: 75vh;
+    width: 23vw;
+    margin-top: -41%;
+    margin-right: 0%;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1441px) {
+  body {
+    overflow: visible;
+    margin-bottom: 19%;
+  }
+
+  #wea_cont2 {
+    width: 37%;
+  }
+  .hour_cont {
+    margin-left: 1.4%;
+  }
+  #places_cont {
+    height: 89vh;
+    width: 23vw;
+    margin-top: -60%;
+    margin-right: 0%;
+  }
+}
