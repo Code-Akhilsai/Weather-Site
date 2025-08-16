@@ -38,8 +38,8 @@ npm run dev
 ```
 
 ## 🔗 Live Demo
-[
-[Click here to view the site]](https://weather-wise-orpin.vercel.app/)
+
+https://weather-wise-orpin.vercel.app/
 
 ---
 
