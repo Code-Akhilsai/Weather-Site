@@ -43,5 +43,5 @@ https://weather-wise-orpin.vercel.app/
 
 ---
 
-Feel free to contribute and improve this project! 🚀😊
+Feel free to contribute and improve this project! 🚀
 
